@@ -1,0 +1,14 @@
+hr:nth-child(2){
+    color: green;
+    border-bottom: 50px solid green;
+    position: relative;
+    top:50px;
+    width: 33%;
+    margin-left: 0px;
+}
+hr:nth-child(1){
+    color: #F4C430;
+    border-top: 50px solid#F4C430;
+    width: 33%;
+    margin-left: 0px;
+}

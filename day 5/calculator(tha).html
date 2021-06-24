@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator(tha).css">
+</head>
+<body>
+    <div class="container">
+        <button onclick="showresult('1')">+</button>
+        <button onclick="showresult('2')">-</button>
+        <button onclick="showresult('3')">*</button>
+        <button onclick="showresult('4')">/</button>
+        <button onclick="showresult('5')">AC</button>
+    </div>
+    <br>
+    <br>
+    <div class="input">
+        <div class="tab1" id="input1">Type Your First Number -: <input name="input1" type="text" size=10 id='num1'/></div>
+        <div class="tab1" id="input2">Type Your Second Number -: <input name="input2" type="text" size=10 id='num2'/></div>
+        <div class="tab1" id="result1">Result -: <input type="text" id='result' readonly ></div>
+    </div>
+    <script src="calculator(tha).js"></script>
+</body>
+
+</html>

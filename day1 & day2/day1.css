@@ -1,0 +1,28 @@
+body{
+    background-color: #da7f8f;
+}
+.original{
+    margin: 50px;
+    background-color: #faf3f3;
+    font-size: large;
+    font-style:oblique;
+}
+.h1{
+    color: rgb(57, 29, 95);
+}
+table,th,td,tr{
+    border: 2px solid black;
+}
+.image{
+    position:relative;
+    bottom: 95px;
+    left: 1670px;
+}
+.imh{
+    position:relative;
+    bottom: 70px;
+    left: 1670px;
+}
+.class1{
+    height: 60px;
+}

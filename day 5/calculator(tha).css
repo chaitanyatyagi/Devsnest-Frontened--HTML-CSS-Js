@@ -1,0 +1,17 @@
+.container{
+    display: grid;
+    height: 50px;
+    width: 380px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: auto;
+    grid-column-gap: 1.2rem;
+    justify-content: center;
+}
+.input{
+    width: 30%;
+    margin: auto;
+}
+input{
+    width: 150px;
+}
+
