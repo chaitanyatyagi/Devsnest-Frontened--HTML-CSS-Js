@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>brick game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <!-- front page  -->
+    <div class="main">
+      <header class="head">BRICK-BREAKER</header>
+      <div class="sub-head">WOULD YOU BREAK IT !</div>
+      <div class="button">
+        <button class="start-button">PLAY</button>
+      </div>
+    </div>
+
+    <!-- select level  -->
+    <div class="levels">
+      <div class="box1">
+        <div class="text">
+          <div class="head">How To Play :</div>
+          <ol>
+            <li>
+              1. The objective is to break the bricks that are distributed
+              around the top of the game screen.
+            </li>
+            <li>2. Move your mouse to control the paddle.</li>
+            <li>
+              3. The player gets 3 lives to start with; a life is lost if the
+              ball hits the bottom of the screen.
+            </li>
+            <li>4. If all lives are lost, the game is over.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="box2">
+        <div class="buttons">
+          <button class="level_1">Level 1</button>
+          <button class="level_2">Level 2</button>
+        </div>
+      </div>
+    </div>
+    <div class="sound">
+      <img src="sound.png" alt="" id="sound">
+  </div>
+
+    <!-- canvas started -->
+    <canvas id="myCanvas" width="600" height="650"></canvas>
+
+    <script src="script.js"></script>
+  </body>
+</html>

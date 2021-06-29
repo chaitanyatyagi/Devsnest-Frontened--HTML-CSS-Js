@@ -1,0 +1,51 @@
+body{
+    box-sizing: border-box;
+    background-image: url(bimg.jpg);
+}
+.container{
+    display: grid;
+    height: 600px;
+    width: 1000px;
+    margin: 40px auto 0px auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    z-index: 2;
+}
+.seatclick{
+    box-shadow: 0px 0px 6px 3px;
+    z-index: 2;
+    background-color: rgb(39, 38, 38);
+    cursor:crosshair;
+}
+.seatclick:hover{
+    opacity: 0.8;
+}
+.seat{
+    box-shadow: 0px 0px 6px 3px;
+    z-index: 2;
+}
+.remaining{
+    display: inline-block;
+    z-index: 2;
+    font-size: 35px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:bolder;
+}
+.booked{
+    float: right;
+    display: inline-block;
+    z-index: 2;
+    font-size: 35px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:bolder;
+}
+.flex{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+}
+.booked{
+    z-index: 2;
+}
+.remaining{
+    z-index: 2;
+}

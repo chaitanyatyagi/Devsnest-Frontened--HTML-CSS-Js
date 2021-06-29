@@ -4,3 +4,4 @@ for(let i in student){
     num += 1;
 }
 console.log(num);
+num 

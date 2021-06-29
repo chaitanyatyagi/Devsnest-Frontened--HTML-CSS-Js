@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Dela Gothic One", cursive;
+}
+body {
+    background-color: rgb(204, 4, 43);
+}
+.levels.activeLevels {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 5;
+}
+canvas.activeCanvas {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 5;
+}
+.start-button.dismissStart,
+.main.dismissStart {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* .main {
+
+} */
+.head {
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.sub-head {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.5),
+        0px 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+.main .button button {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    color: rgb(204, 4, 43);
+}
+.levels {
+    /* height: 400px;
+  width: 1200px; */
+    opacity: 0;
+    pointer-events: none;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.5),
+        0px 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+.box2 {
+    display: flex;
+    justify-content: space-around;
+    margin-block: 50px;
+}
+.box2 .buttons button {
+    margin: 0 10px;
+    height: 45px;
+    padding: 0 20px;
+    border: 1px solid rgb(204, 4, 43);
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    /* color: rgb(204, 4, 43); */
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px 0 rgba(204, 4, 43, 0.3),
+        0px 6px 20px 0 rgba(204, 4, 43, 0.5);
+}
+.box2 .buttons button:hover {
+    background-color: rgb(204, 4, 43);
+    color: white;
+}
+.text ol {
+    padding-inline: 50px;
+    list-style: none;
+    padding-block: 30px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.5rem;
+}
+.text ol li {
+    display: inline-block;
+}
+.levels .head {
+    color: rgb(204, 4, 43);
+}
+
+.levels.dismissLevels {
+    opacity: 0;
+    pointer-events: none;
+}
+
+canvas {
+    border: 2px solid black;
+    background: #eee;
+    display: block;
+    margin: 10px auto;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#sound {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 400px;
+    left: 15px;
+}
