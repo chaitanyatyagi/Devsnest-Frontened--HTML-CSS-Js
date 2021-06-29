@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="shortcut icon" type="image" href="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTAwIDEwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik00Ny4yODQsNDcuMzYzbDEuMDkyLTEuODAybDQuNTY5LTcuNTM0bDEuOTg5LTMuMjc0bDIuNzg3LTQuNTk2bDAuNDQyLTAuNzMzICAgbDAuNC0wLjY1N2gtMi44MjlINDQuMjU0aC00LjU4OWMtMC42OTksMC0xLjI1LDAuNTI3LTEuMzQ5LDEuMTkxYy0wLjAxMSwwLjA3Ni0wLjAzOCwwLjEzLTAuMDM4LDAuMTk5djEuMjM5djMuNjc4djE1LjM0OXYxMS44MDggICBsMS4zODctMi4zMDFsNi41MjctMTAuNzY4TDQ3LjI4NCw0Ny4zNjN6IE00NC45NzMsMzAuOTU4bC0wLjQ1OSwwLjY5MmwtMS4xMTYsMS42NzlsLTAuNCwwLjU5NmgwLjUwN2gwLjM4N2wtMC4zMjUsMC4zMjIgICBsLTIuMzYyLDIuMzdsMS43OTQtMi42OTJINDEuOThsMS4yOTQtMS4yOTRsMS4xNzQtMS4xNzhsMC40OTctMC41bDAuMTAzLTAuMTAzTDQ0Ljk3MywzMC45NTh6Ij48L3BhdGg+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02MS43MjIsNjYuMjg4di03LjM3MXYtOC40MzFWMzUuMTI0VjM0LjYzdi0wLjM0OWwtMC4zNjYsMC42MWwtMC43OTEsMS4yOTUgICBsLTAuMjI5LDAuMzgzbC0wLjAwMywwLjAwN2wtMC42NjEsMS4wODlsLTUuNDExLDguOTI0bC0xLjk4OSwzLjI3NGwtMS45OSwzLjI4MmwtMC40MzUsMC43MjVsLTEuMDk1LDEuODAzbC0xLjA5MiwxLjgwMSAgIGwtNS4zNDIsOC44MTVsLTAuODQzLDEuMzkxaDYuNzI2aDAuMTMxaDEuMjg3aDAuMTA2aDAuNTUyaDEuMzkzaDAuMTNoMi4yNTRoNi4yODRDNjEuMDk5LDY3LjY3OSw2MS43MjIsNjcuMDQ4LDYxLjcyMiw2Ni4yODh6ICAgIE01Ny41NDcsNjMuNjg2aDAuNzAybC0yLjU5OSwyLjYwM2wtMC4wOTMsMC4wODlsMC4wNTgtMC4wODlsMS4xMjctMS42ODVsMC42MTMtMC45MThoLTEuMDIxbDMuMDY4LTMuMDc1bC0yLjA0OCwzLjA3NUg1Ny41NDd6Ij48L3BhdGg+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik01MCw1QzI1LjE0OSw1LDUsMjUuMTQ1LDUsNTBjMCwyNC44NTYsMjAuMTQ5LDQ1LDQ1LDQ1YzI0Ljg1MSwwLDQ1LTIwLjE0NCw0NS00NSAgIEM5NSwyNS4xNDUsNzQuODUxLDUsNTAsNXogTTI4Ljk1LDczLjk1MmMtMC4yMzYsMC4wMzQtMC40NzcsMC4wNjItMC43MDgsMC4wNjJjLTEuNzkxLDAtMy4yODgtMS4xOTItMy44MTktMi44NTdsLTAuMTQ2LTAuMDQ4ICAgbDAuMDYyLTAuMTdjLTAuMDI4LTAuMTA0LTAuMDg2LTAuMTg2LTAuMTA2LTAuMjk2TDE4LjE2NCwzNi4yNGMtMC4zODctMi4yMTIsMS4wOTItNC4zMjksMy4zMDUtNC43MjZsMTIuNzI4LTIuMjQgICBjLTAuMDQ4LDAuMjg4LTAuMDg5LDAuNTgyLTAuMDg5LDAuODgzdjAuNTQxdjEuNDMybC0xMi4xNTYsMi4xMjRjLTAuNzAyLDAuMTMtMS4xNzQsMC44MDItMS4wNTEsMS41bDUuMzM4LDMwLjI5NGw3Ljg2OS0yMC4yNDcgICBWNjEuMTVsLTMuNzg0LDkuNzMzbDUuMjA4LTAuOTE4YzAuNDE3LDAuNDY1LDAuOTA4LDAuODUsMS40NTIsMS4xNThjMC44MDIsMC40NDUsMS43MDYsMC43MjYsMi42ODIsMC43MjZoMS4yMzZMMjguOTUsNzMuOTUyeiAgICBNMjYuODM0LDM4LjQxMWwtMi4xMDksMy4wMTRsMS4yNi0yLjg2MmwtMC45NywwLjE2NGwyLjQwOC0zLjQzMWwtMS40MzgsMy4yNjdMMjYuODM0LDM4LjQxMXogTTQ4LjcyOSw3MC40NTloLTcuOTQ0aC0xLjEyICAgYy0wLjkwNCwwLTEuNzMyLTAuMzAxLTIuNDE4LTAuNzk0Yy0wLjkxMS0wLjY1LTEuNTM0LTEuNjY1LTEuNjk0LTIuODIybC0wLjA1OS0wLjAzNGwwLjA0OC0wLjA3NiAgIGMtMC4wMTctMC4xNS0wLjA0NS0wLjI5My0wLjA0NS0wLjQ0NHYtOC43MTNWNDIuMjI2VjMxLjg4NHYtMS40MjR2LTAuMzAyYzAtMC4zOTcsMC4wNzYtMC43NzQsMC4xNzktMS4xNDQgICBjMC41LTEuNzQsMi4wODktMy4wMjcsMy45ODktMy4wMjdoMjAuNjdjMS44OTYsMCwzLjQ4NSwxLjI4OCwzLjk4NSwzLjAyN2MwLjEwNywwLjM3LDAuMTc5LDAuNzQ3LDAuMTc5LDEuMTQ0djAuMzAydjEuNDAzdjE1LjQ1MiAgIHY4LjQzOXYxMC41MzRjMCwxLjM5MS0wLjY4OCwyLjYwOS0xLjc0LDMuMzc3Yy0wLjY4MSwwLjQ5My0xLjUyMSwwLjc5NC0yLjQyNCwwLjc5NGgtMS4xM2gtNy45MzhINDguNzI5eiBNNzUuNzY5LDcwLjY0NCAgIGMtMC4zNDcsMS45NTktMi4wMzEsMy4zNzEtNC4wMTMsMy4zNzFjLTAuMjM0LDAtMC40NzMtMC4wMTUtMC43MTMtMC4wNjJMNTkuMDg5LDcxLjg1aDEuMjQ2YzAuOTc2LDAsMS44NzYtMC4yOCwyLjY3NC0wLjcyNiAgIGMwLjU1Mi0wLjMwOSwxLjA0NC0wLjY5OSwxLjQ2Mi0xLjE2NWw3LjI4NSwxLjI3NGMwLjYyOSwwLDEuMTY3LTAuNDUyLDEuMjczLTEuMDY4bDUuMzMxLTMwLjIzM0w2NS44OSw1NC4xNjR2LTguNDM4TDc2LjIzLDMzLjkzMiAgIEw2NS44OSwzMi4xMXYtMS40MTJ2LTAuNTQxYzAtMC4zMDEtMC4wNDYtMC41OTYtMC4wOS0wLjg4M2wxMi43MjksMi4yNGMyLjIxMiwwLjM5NywzLjY5NSwyLjUyLDMuMzA5LDQuNzI2TDc1Ljc2OSw3MC42NDR6ICAgIE02OC4zOSw2Ni43ODhsMy40MzUtMi40MDVsLTIuNDY3LDIuNTY5bDAuODUsMC4xNTFsLTMuMDEzLDIuMTE2bDIuMTYzLTIuMjY4TDY4LjM5LDY2Ljc4OHoiPjwvcGF0aD48L2c+PC9zdmc+">
+    <link rel="stylesheet" href="tha10.css">
+</head>
+<body>
+    <section class="memory-game">
+        <div class="memory-card" data-framework="backbone">
+            <img src="backbone.svg" alt="" class="front-face">
+            <img src="js-badge.svg" alt="" class="back-face">
+        </div>
+        <div class="memory-card" data-framework="ember">
+            <img src="ember.svg" alt="" class="front-face">
+            <img src="js-badge.svg" alt="" class="back-face">
+        </div>
+        <div class="memory-card" data-framework="vue">
+            <img src="vue.svg" alt="" class="front-face">
+            <img src="js-badge.svg" alt="" class="back-face">
+        </div>
+        <div class="memory-card" data-framework="react">
+            <img src="react.svg" alt="" class="front-face">
+            <img src="js-badge.svg" alt="" class="back-face">
+        </div>
+        <div class="memory-card" data-framework="aurelia">
+            <img src="aurelia.svg" alt="" class="front-face">
+            <img src="js-badge.svg" alt="" class="back-face">
+        </div>
+        <div class="memory-card" data-framework="ember">
+            <img src="ember.svg" alt="" class="front-face">
+            <img src="js-badge.svg" alt="" class="back-face">
+        </div>
+        <div class="memory-card" data-framework="react">
+            <img src="react.svg" alt="" class="front-face">
+            <img src="js-badge.svg" alt="" class="back-face">
+        </div>
+        <div class="memory-card" data-framework="backbone">
+            <img src="backbone.svg" alt="" class="front-face">
+            <img src="js-badge.svg" alt="" class="back-face">
+        </div>
+        <div class="memory-card" data-framework="angular">
+            <img src="angular.svg" alt="" class="front-face">
+            <img src="js-badge.svg" alt="" class="back-face">
+        </div>
+        <div class="memory-card" data-framework="vue">
+            <img src="vue.svg" alt="" class="front-face">
+            <img src="js-badge.svg" alt="" class="back-face">
+        </div>
+        <div class="memory-card" data-framework="aurelia">
+            <img src="aurelia.svg" alt="" class="front-face">
+            <img src="js-badge.svg" alt="" class="back-face">
+        </div>
+        <div class="memory-card" data-framework="angular">
+            <img src="angular.svg" alt="" class="front-face">
+            <img src="js-badge.svg" alt="" class="back-face">
+        </div>
+    </section>
+<script src="tha10.js"></script>
+</body>
+</html>
