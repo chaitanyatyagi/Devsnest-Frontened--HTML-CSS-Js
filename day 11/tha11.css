@@ -1,0 +1,70 @@
+body{
+    background: #F2994A;  
+    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  
+    background: linear-gradient(to right, #F2C94C, #F2994A);
+}
+.quiz{
+    display: grid;
+    height: 80vh;
+    width: 100%;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+    margin-top: 5vh;
+}
+.question{
+    border-radius: 4px;
+    box-shadow: inset 0px 0px 2px 4px rgb(231, 149, 42);
+    text-align: center;
+    font-size: 30px;
+    line-height:176px; 
+    background-color: rgb(241, 190, 123);
+}
+.ans1, .ans2, .ans3, .ans4{
+    border-radius: 6px;
+    background-color: rgb(240, 220, 194);
+    box-shadow: inset 0px 0px 2px 4px rgb(241, 192, 127);
+    text-align: left;
+    font-size: 30px;
+    line-height: 90px;
+}
+.slide{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100%;
+}
+.next{
+    border-radius: 4px;
+    box-shadow: inset 0px 0px 2px 4px rgb(231, 149, 42);
+    background-color: rgb(241, 190, 123);
+    width: 20vw;
+    text-align: center;
+    font-size: 30px;
+    line-height:70px ;
+}
+.previous{
+    border-radius: 4px;
+    box-shadow: inset 0px 0px 2px 4px rgb(231, 149, 42);
+    background-color: rgb(241, 190, 123);
+    width: 20vw;
+    text-align: center;
+    font-size: 30px;
+    line-height:70px ;
+}
+.right{
+    border-radius: 6px;
+    background-color: rgb(240, 220, 194);
+    box-shadow: inset 0px 0px 2px 4px rgb(241, 192, 127);
+    text-align: left;
+    font-size: 30px;
+    line-height: 90px;
+    background-color: rgb(23, 231, 23);
+}
+.wrong{
+    border-radius: 6px;
+    background-color: rgb(240, 220, 194);
+    box-shadow: inset 0px 0px 2px 4px rgb(241, 192, 127);
+    text-align: left;
+    font-size: 30px;
+    line-height: 90px;
+    background-color: rgb(250, 31, 31);
+}
