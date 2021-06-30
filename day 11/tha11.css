@@ -51,12 +51,7 @@ body{
     line-height:70px ;
 }
 .right{
-    border-radius: 6px;
-    background-color: rgb(240, 220, 194);
-    box-shadow: inset 0px 0px 2px 4px rgb(241, 192, 127);
-    text-align: left;
-    font-size: 30px;
-    line-height: 90px;
+    border-radius: 20px;
     background-color: rgb(23, 231, 23);
 }
 .wrong{
