@@ -87,16 +87,55 @@ let x = 0;
 for (let j = 0; j < 4; j++) {
     btn[j].addEventListener('click', () => {
         if (btn[j].innerHTML == my_list[x].answer.innerHTML) {
-            console.log("hello !!");
-            my_list[x].answer.classList.add('right');
+            my_list[x].answer.innerHTML = 'CORRECT ANSWER';
+            my_list[x].answer.style.color = 'green';
             sm += 1;
-            x += 1;
         }
         else {
-            console.log("hello else !!");
-            btn[j].classList.add('wrong');
+            btn[j].innerHTML = 'WRONG ANSWER';
+            btn[j].style.color = 'red';
             sm -= 1;
-            x += 1;
         }
     })
 }
+
+let next = document.querySelector('.next');
+let previous = document.querySelector('.previous');
+let question = document.querySelector('.question');
+let ans1 = document.querySelector('.ans1');
+let ans2 = document.querySelector('.ans2');
+let ans3 = document.querySelector('.ans3');
+let ans4 = document.querySelector('.ans4');
+
+next.addEventListener('click',()=>{
+    if(x<10){
+        x += 1;
+    ans1.style.color = 'white';
+    ans2.style.color = 'white';
+    ans3.style.color = 'white';
+    ans4.style.color = 'white';
+    question.innerHTML = my_list[x].QUESTION;
+    ans1.innerHTML = my_list[x].OPTION1;
+    ans2.innerHTML = my_list[x].OPTION2;
+    ans3.innerHTML = my_list[x].OPTION3;
+    ans4.innerHTML = my_list[x].OPTION4;
+    }
+    else if(x==10){
+        question.innerHTML = `TOTAL SCORE ${sm} out of 10`;
+        ans1.innerHTML = "+1 for correct answer ";
+        ans2.innerHTML = "-1 for wrong answer ";
+        ans3.innerHTML = "0 for no answer ";
+        ans4.innerHTML = "Good Game ";
+    }
+});
+
+previous.addEventListener('click',()=>{
+    if(x>0){
+        x -= 1;
+    question.innerHTML = my_list[x].QUESTION;
+    ans1.innerHTML = my_list[x].OPTION1;
+    ans2.innerHTML = my_list[x].OPTION2;
+    ans3.innerHTML = my_list[x].OPTION3;
+    ans4.innerHTML = my_list[x].OPTION4;
+    }
+});

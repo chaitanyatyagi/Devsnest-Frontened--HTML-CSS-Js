@@ -1,8 +1,3 @@
-body{
-    background: #F2994A;  
-    background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  
-    background: linear-gradient(to right, #F2C94C, #F2994A);
-}
 .quiz{
     display: grid;
     height: 80vh;
@@ -12,17 +7,18 @@ body{
 }
 .question{
     border-radius: 4px;
-    box-shadow: inset 0px 0px 2px 4px rgb(231, 149, 42);
+    /* box-shadow: inset 0px 0px 2px 4px rgb(231, 149, 42); */
     text-align: center;
     font-size: 30px;
     line-height:176px; 
-    background-color: rgb(241, 190, 123);
+    background-color: black;
+    color: white;
 }
 .ans1, .ans2, .ans3, .ans4{
-    border-radius: 6px;
-    background-color: rgb(240, 220, 194);
-    box-shadow: inset 0px 0px 2px 4px rgb(241, 192, 127);
-    text-align: left;
+    border-radius: 36px;
+    background-color: black;
+    color: white;
+    text-align: center;
     font-size: 30px;
     line-height: 90px;
 }
@@ -34,32 +30,22 @@ body{
 }
 .next{
     border-radius: 4px;
-    box-shadow: inset 0px 0px 2px 4px rgb(231, 149, 42);
-    background-color: rgb(241, 190, 123);
-    width: 20vw;
+    /* box-shadow: inset 0px 0px 2px 4px rgb(231, 149, 42); */
+    background-color: #000000;
+    color: white;
+    width: 10vw;
     text-align: center;
-    font-size: 30px;
+    font-size: 15px;
     line-height:70px ;
 }
 .previous{
     border-radius: 4px;
-    box-shadow: inset 0px 0px 2px 4px rgb(231, 149, 42);
-    background-color: rgb(241, 190, 123);
-    width: 20vw;
+    color: white;
+    /* box-shadow: inset 0px 0px 2px 4px rgb(231, 149, 42); */
+    background-color: black;
+    width: 10vw;
     text-align: center;
-    font-size: 30px;
+    font-size: 15px;
     line-height:70px ;
 }
-.right{
-    border-radius: 20px;
-    background-color: rgb(23, 231, 23);
-}
-.wrong{
-    border-radius: 6px;
-    background-color: rgb(240, 220, 194);
-    box-shadow: inset 0px 0px 2px 4px rgb(241, 192, 127);
-    text-align: left;
-    font-size: 30px;
-    line-height: 90px;
-    background-color: rgb(250, 31, 31);
-}
+
