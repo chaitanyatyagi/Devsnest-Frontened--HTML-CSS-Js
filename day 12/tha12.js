@@ -1,21 +1,31 @@
 let input = document.querySelector('input');
 let add = document.querySelector('button');
 let newx = document.querySelector('.newx');
-let x = 0;
-add.addEventListener('click',()=>{
-    const subnew = document.createElement('div') ;
-    subnew.innerHTML = input.value;
-    subnew.innerHTML += "<button class='btn'>remove</button>";
-    newx.appendChild(subnew);
-    subnew.classList.add('new')
-    x += 1;
-});
+add.addEventListener('click', () => {
+    if (input.value != "") {
+        const subnew = document.createElement('div');
+        subnew.innerHTML = input.value;
 
-let butn = document.querySelectorAll('.btn');
+        // new div added to store list elements
+        newx.appendChild(subnew);
+        subnew.classList.add('new');
 
-for(let i = 0; i<x ; i++){
-    butn[i].addEventListener('click',()=>{
-        subnew.parentNode.removeChild('subnew');
-        x -= 1;
-    })
-}
+        // new button added in subnew div
+        let butn = document.createElement('button');
+        subnew.appendChild(butn);
+        butn.classList.add('btn');
+        butn.innerHTML = 'x';
+
+        // program to delete entire entry
+        let butx = document.querySelectorAll('.btn');
+        for (let i = 0; i < butx.length; i++) {
+            butx[i].addEventListener('click', () => {
+                butx[i].parentElement.remove();
+            });
+        }
+    }
+    else {
+        alert("ENTER SOMETHING")
+    }
+    input.value = "";
+    });

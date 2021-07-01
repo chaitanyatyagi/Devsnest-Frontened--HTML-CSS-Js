@@ -1,0 +1,26 @@
+.home{
+    display: grid;
+    height: 500px;
+    width: 600px;
+    background-color: black;
+    color: white;
+    margin: 100px auto;
+    grid-template-rows: 4fr 1fr;
+}
+.instructions{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+}
+.button{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 5px 5px;
+}

@@ -81,22 +81,25 @@ let my_list =
     },
     ]
 
-let sm = 0;
 let btn = document.querySelectorAll('#select');
+let correct = 0;
+let wrong = 0;
 let x = 0;
 for (let j = 0; j < 4; j++) {
-    btn[j].addEventListener('click', () => {
+    btn[j].addEventListener('click', (stop) => {
         if (btn[j].innerHTML == my_list[x].answer.innerHTML) {
             my_list[x].answer.innerHTML = 'CORRECT ANSWER';
             my_list[x].answer.style.color = 'green';
-            sm += 1;
+            correct += 1;
+            stop.stopPropagation();
         }
         else {
             btn[j].innerHTML = 'WRONG ANSWER';
             btn[j].style.color = 'red';
-            sm -= 1;
+            wrong -= 1;
+            stop.stopPropagation();
         }
-    })
+    });
 }
 
 let next = document.querySelector('.next');
@@ -121,11 +124,13 @@ next.addEventListener('click',()=>{
     ans4.innerHTML = my_list[x].OPTION4;
     }
     else if(x==10){
-        question.innerHTML = `TOTAL SCORE ${sm} out of 10`;
-        ans1.innerHTML = "+1 for correct answer ";
-        ans2.innerHTML = "-1 for wrong answer ";
-        ans3.innerHTML = "0 for no answer ";
-        ans4.innerHTML = "Good Game ";
+        question.innerHTML = `TOTAL SCORE ${correct + wrong} out of 10`;
+        ans1.innerHTML = `Total Correct points = ${correct} `;
+        ans2.innerHTML = `-Total Wrong points = ${wrong} `;
+        ans3.style.backgroundColor = "white";
+        ans3.style.backgroundColor = "2px solid white";
+        ans4.style.backgroundColor = "white";
+        ans4.style.backgroundColor = "2px solid white";
     }
 });
 
@@ -137,5 +142,14 @@ previous.addEventListener('click',()=>{
     ans2.innerHTML = my_list[x].OPTION2;
     ans3.innerHTML = my_list[x].OPTION3;
     ans4.innerHTML = my_list[x].OPTION4;
+    ans3.style.backgroundColor = "black";
+    ans4.style.backgroundColor = "black";
+    ans3.style.color = "white";
+    ans1.style.color = "white";
+    ans2.style.color = "white";
+    ans4.style.color = "white";
+    }
+    else if(x == 0){
+        window.location = "http://127.0.0.1:5500/day%2011/tha11homepg.html";
     }
 });

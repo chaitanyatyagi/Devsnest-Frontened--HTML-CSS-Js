@@ -7,12 +7,12 @@
 }
 .question{
     border-radius: 4px;
-    /* box-shadow: inset 0px 0px 2px 4px rgb(231, 149, 42); */
+    box-shadow: inset 0px 0px 2px 4px black;
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
     line-height:176px; 
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 .ans1, .ans2, .ans3, .ans4{
     border-radius: 36px;
@@ -47,5 +47,8 @@
     text-align: center;
     font-size: 15px;
     line-height:70px ;
+}
+#select{
+    border: 2px solid white;
 }
 
