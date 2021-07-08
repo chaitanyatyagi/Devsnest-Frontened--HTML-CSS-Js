@@ -32,7 +32,7 @@ let my_list =
         answer: document.querySelector('.ans4')
     },
     {
-        QUESTION: "Which country won 2020 Euro league",
+        QUESTION: "Which country won 2020 Euro league?",
         OPTION1: "France",
         OPTION2: "Italy",
         OPTION3: "Portugal",
@@ -91,13 +91,11 @@ for (let j = 0; j < 4; j++) {
             my_list[x].answer.innerHTML = 'CORRECT ANSWER';
             my_list[x].answer.style.color = 'green';
             correct += 1;
-            stop.stopPropagation();
         }
         else {
             btn[j].innerHTML = 'WRONG ANSWER';
             btn[j].style.color = 'red';
             wrong -= 1;
-            stop.stopPropagation();
         }
     });
 }
@@ -123,10 +121,10 @@ next.addEventListener('click',()=>{
     ans3.innerHTML = my_list[x].OPTION3;
     ans4.innerHTML = my_list[x].OPTION4;
     }
-    else if(x==10){
+    else if(x==10 || x==9){
         question.innerHTML = `TOTAL SCORE ${correct + wrong} out of 10`;
         ans1.innerHTML = `Total Correct points = ${correct} `;
-        ans2.innerHTML = `-Total Wrong points = ${wrong} `;
+        ans2.innerHTML = `Total Wrong points = ${wrong} `;
         ans3.style.backgroundColor = "white";
         ans3.style.backgroundColor = "2px solid white";
         ans4.style.backgroundColor = "white";
