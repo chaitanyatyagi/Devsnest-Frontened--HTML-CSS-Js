@@ -1,24 +1,24 @@
-var input = document.querySelector('input');
-var show =document.querySelector('button')
-const container1 = document.querySelector(".containerOne")
-const container2 = document.querySelector(".containerTwo")
+let input = document.querySelector('input')
+let btn = document.querySelector('button')
+let tp = document.querySelector('.top')
+let container = document.querySelector('.container')
 
-show.addEventListener('click',async function(){
-    container1.classList.add('hidden')
-    container2.classList.remove('hidden')
-    console.log(input.value)
-    let res = getData(input.value)
-    let user = await res
+btn.addEventListener('click',async function(){
+    input.remove()
+    btn.remove()
+    container.classList.remove('container')
+    tp.classList.remove('top')
+    tp.innerHTML = ""
+    container.classList.add('result')
+    let response = getData(input.value)
+    let user = await response
     let status = user.status
-    console.log(status)
-    if(status == "FAILED"){
-        const handle = document.createElement('h1');
-        handle.innerHTML = 'UserName Invalid'
-        container2.appendChild(handle)
-    }else{
-        ShowData(user);
+    if(status == 'FAILED'){
+        container.innerHTML = "<h1> USERNAME INVALID </h1>"
     }
-        
+    else{
+        showData(user)
+    }
 })
 
 async function getData(username){
@@ -27,25 +27,30 @@ async function getData(username){
     return data;
 }
 
-function ShowData(user){
-    const handle = document.createElement('h1');
+function showData(user){
+    const handle = document.createElement('h3');
     const photo = document.createElement('img');
-    const rank = document.createElement('h3');
-    const rating = document.createElement('h3');
-    const country = document.createElement('h3');
+    const rank = document.createElement('h6');
+    const rating = document.createElement('h6');
+    const country = document.createElement('h6');
 
     handle.innerHTML = user.result[0].handle;
-    container2.appendChild(handle);
+    container.appendChild(handle);
+    handle.classList.add('show')
     photo.src = user.result[0].titlePhoto;
-    container2.appendChild(photo);
-    photo.style.width = "200px"
+    container.appendChild(photo);
+    photo.classList.add('pic')
+    // photo.style.width = "50px"
     rank.innerHTML = "Rank: " + user.result[0].rank;
-    container2.appendChild(rank);
+    container.appendChild(rank);
+    rank.classList.add('show')
     rating.innerHTML = "Rating: " + user.result[0].rating;
-    container2.appendChild(rating);
+    container.appendChild(rating);
+    rating.classList.add('show')
     if(user.result[0].city){
         country.innerHTML = "City: " + user.result[0].country;
-        container2.appendChild(country)
+        container.appendChild(country)
+        country.classList.add('show')
     }
     
 }
