@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(184, 197, 221);
+}
+.Card img{
+    height: 300px;
+    width: 500px;
+}
+.Card{
+    border: 4px solid black;
+    border-radius: 3px;
+    background-color: rgb(65, 178, 182);
+    display: inline-block;
+    margin: 200px 0px 0px 500px;
+}
+.Card h2{
+    background-color: rgb(65, 178, 182);
+}
+.Card p{
+    background-color: rgb(65, 178, 182);
+}

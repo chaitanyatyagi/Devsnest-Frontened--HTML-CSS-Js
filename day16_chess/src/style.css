@@ -1,0 +1,28 @@
+.App{
+    border: 15px solid black;
+    height: 320px;
+    width: 320px;
+    margin: 200px 0px 0px 600px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.Row1{
+    display: grid;
+    width: 320px;
+    height: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+.Row2{
+    width: 320px;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+.Black{
+    background-color: black;
+}
+.White{
+    background-color: white;
+}

@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background: #000046;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.App{
+    display: inline-block;
+    width: 500px;
+    margin: 130px 0px 0px 500px;
+    height:391px ;
+    z-index: 9;
+}
+.Block{
+    height: 100px;
+    display: inline-block;
+    width: 500px;
+    padding: 23px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.scroll{
+    display: inline-block;
+    width: 500px;
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.instructions{
+    display: inline-block;
+    width: 500px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+}
+.instructions li{
+text-align: left;
+}
