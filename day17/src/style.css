@@ -27,7 +27,7 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
 }
 .scroll{
     display: inline-block;
-    width: 500px;
+    width: 600px;
     height: 200px;
     overflow-x: hidden;
     overflow-y: auto;

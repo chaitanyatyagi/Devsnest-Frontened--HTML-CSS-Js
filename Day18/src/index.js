@@ -1,10 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import Board from "./board";
-import "./style.css";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 
-const App = () => {
-  return <Board />;
-};
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
-ReactDOM.render(<App />, document.getElementById("root"));

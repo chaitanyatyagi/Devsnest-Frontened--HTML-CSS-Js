@@ -1,28 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  min-height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.board {
-  height: 452px;
-  width: 452px;
-  border: 25px solid black;
-  padding: 1px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.box {
-  width: 50px;
-  height: 50px;
-  /* background-color: black; */
-  border: 1px solid white;
+.App{
+    border: 15px solid black;
+    height: 320px;
+    width: 320px;
+    margin: 200px 0px 0px 600px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
