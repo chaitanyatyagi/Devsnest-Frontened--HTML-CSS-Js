@@ -17,6 +17,7 @@ function App() {
                 <Cell color={color}/>
               )
             })
+        
       }
     </div>
   );
