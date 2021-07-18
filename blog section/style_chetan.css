@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    /* background-image: url(/images/background.png); */
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  h3{
+    display: inline-block;
+    margin: 0px 0px 0px 350px;
+  }
+  
+  .slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  button{
+    background-color: black;
+  }
+  
+  .slides{
+    width: 600%;
+    height: 500px;
+    display: flex;
+  }
+  .new{
+    color: black;
+    font-size: x-large;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 0.2s;
+  }
+
+
+
+  #FIRST{
+    background-image: url(/images/fort.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  #SECOND{
+    background-image: url(/images/glamping.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  #THIRD{
+    background-image: url(/images/temple.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  #FOURTH{
+    background-image: url(/images/waterfall.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  #FIFTH{
+    background-image: url(/images/yoga.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  #SIXTH{
+    background-image: url(/images/newyear.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+  } 
+
+.slide:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.hide{
+  display: none;
+  opacity: 1;
+}
+
+.hide p{
+  font-size: xx-large;
+  font-weight: bolder;
+  color: black;
+  position: relative;
+  top: 50px;
+  opacity: 1;
+}
+  
+  /*css for manual slide navigation*/
+  
+  .navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: black;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  #radio5:checked ~ .first{
+    margin-left: -80%;
+  }
+
+  #radio6:checked ~ .first{
+    margin-left: -100%;
+  }
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: black;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: black;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: black;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: black;
+  }
+
+  #radio5:checked ~ .navigation-auto .auto-btn5{
+    background: black;
+  }
+
+  #radio6:checked ~ .navigation-auto .auto-btn6{
+    background: black;
+  }
