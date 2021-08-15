@@ -1,0 +1,41 @@
+*{
+    color: black;
+    margin: auto;
+}
+.parent{
+    display: grid;
+    grid-template-rows: 1fr;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 200px;
+   width: 500px;
+}
+.Main{
+    height: 100px;
+    width: 450px;
+    background-color: greenyellow;
+    display: grid;
+    grid-template-rows: 1fr;
+    border-radius: 13px;
+    border: 2px solid black;
+}
+.body{
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+    width: 100%;
+    padding-bottom: 15px;
+}
+.title{
+    height: 50%;
+    width: 100%;
+}
+.block{
+    border: 2px solid black;
+    height: 300px;
+    width: 500px;
+
+}
+.App{
+    margin-top: 35px;
+}
