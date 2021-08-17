@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+.tempelate{
+    width:33.33% ;
+    display: inline-block;
+    border: 10px solid transparent;
+}
+.tempelate .image{
+    width: 100%;
+    height: 500px;
+    border: 1px solid white;
+    background-size: cover;
+    background-position:  center;
+}
+.App h1{
+    text-align: center;
+    margin: 10px;
+}
+.App h5{
+    text-align: center;
+    margin: 10px;
+}
+.meme{
+    text-align: center;
+}
+.meme img{
+    width: auto;
+    height: 500px;
+    border: 2px solid black;
+}
+.meme input{
+    margin: 10px;
+    padding: 5px;
+}
+.meme button{
+    margin: 10px;
+    padding: 5px;
+}
