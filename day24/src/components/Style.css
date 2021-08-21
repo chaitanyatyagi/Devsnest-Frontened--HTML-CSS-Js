@@ -1,0 +1,16 @@
+.navbar{
+    display: flex;
+    background-color: cadetblue;
+    justify-content: space-evenly;
+    height: 40px;
+    align-items: center;
+}
+.btn{
+    text-align: center;
+}
+.instruction{
+    text-align: center;
+}
+.home{
+    text-align: center;
+}
