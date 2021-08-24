@@ -10,6 +10,7 @@ import {
   import Profile from './Profile'
   import About from './About'
   import Dashboard from './Dashboard'
+  import AppState from './context/MainContext';
 
 function NavBar() {
     return (
@@ -20,6 +21,7 @@ function NavBar() {
             <div className='items'><Link to='/Profile' style={{ textDecoration: "none" }}>PROFILE</Link></div>
             <div className='items'><Link to='/Dashboard' style={{ textDecoration: "none" }}>DASHBOARD</Link></div>
             </div>
+            <AppState>
             <Switch>
             <Route path="/about">
                 <About />
@@ -34,6 +36,7 @@ function NavBar() {
                 <Home />
             </Route>
             </Switch>
+            </AppState>
         </Router>
         
     )
