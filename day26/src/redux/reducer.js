@@ -7,7 +7,6 @@ const initialEmailState = {
 }
 
 const nameReducer = (state=initialNameState,action) => {
-    console.log(action)
     switch(action.type){
         case 'Name':
             console.log(action.text)
@@ -30,4 +29,4 @@ const emailReducer = (state=initialEmailState,action) => {
     }
 }
 
-export default {nameReducer,emailReducer}
+export {nameReducer,emailReducer}

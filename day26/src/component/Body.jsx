@@ -5,8 +5,8 @@ import {useSelector,useDispatch} from 'react-redux'
 import './style.css'
 
 function Body() {
-    const name = useSelector(state => state.name)
-    const email = useSelector(state => state.email)
+    const {name} = useSelector(state => state.names)
+    const {email} = useSelector(state => state.email)
     const dispatch = useDispatch()
     return (
         <div>
@@ -18,9 +18,7 @@ function Body() {
             </div>
             <div>
                 <h2>Input</h2>
-                <input type="text" placeholder="type your name" onChange={(event) => 
-                    {console.log(event.target.value)
-                    dispatch(typeName(event.target.value))}}/>
+                <input type="text" placeholder="type your name" onChange={(event) => dispatch(typeName(event.target.value))}/>
                 <input type="text" placeholder="type your email" onChange={(event) => dispatch(typeEmail(event.target.value))}/>
             </div>
             <div>
