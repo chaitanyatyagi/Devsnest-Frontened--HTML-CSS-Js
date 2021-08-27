@@ -3,12 +3,14 @@ const initialNameState = {
 }
 
 const initialEmailState = {
-    Email: ''
+    email: ''
 }
 
 const nameReducer = (state=initialNameState,action) => {
+    console.log(action)
     switch(action.type){
         case 'Name':
+            console.log(action.text)
             return{
                 ...state,
                 name:action.text
@@ -22,7 +24,7 @@ const emailReducer = (state=initialEmailState,action) => {
         case 'Email':
             return{
                 ...state,
-                name:action.text
+                email:action.text
             }
         default:return state
     }

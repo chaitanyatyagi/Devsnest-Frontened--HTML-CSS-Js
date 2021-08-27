@@ -1,8 +1,13 @@
 import React from 'react'
-import {connect} from 'react-redux'
+// import {connect} from 'react-redux'
 import {typeName,typeEmail} from '../redux/action'
+import {useSelector,useDispatch} from 'react-redux'
+import './style.css'
 
-function Body(props) {
+function Body() {
+    const name = useSelector(state => state.name)
+    const email = useSelector(state => state.email)
+    const dispatch = useDispatch()
     return (
         <div>
             <div>
@@ -13,42 +18,44 @@ function Body(props) {
             </div>
             <div>
                 <h2>Input</h2>
-                <input type="text" placeholder="name" onChange={props.typeName}/>
-                <input type="text" placeholder="email" onChange={props.typeEmail}/>
+                <input type="text" placeholder="type your name" onChange={(event) => 
+                    {console.log(event.target.value)
+                    dispatch(typeName(event.target.value))}}/>
+                <input type="text" placeholder="type your email" onChange={(event) => dispatch(typeEmail(event.target.value))}/>
             </div>
             <div>
                 <h1>Data</h1>
-                <p>Name :- {props.name}</p>
-                <p>Email :- {props.email}</p>
+                <p>Name :- {name}</p>
+                <p>Email :- {email}</p>
             </div>
         </div>
     )
 }
 
-const map1StateToProps = state => {
-    return {
-        name : state.name
-    }
-}
+// const map1StateToProps = state => {
+//     return {
+//         name : state.name
+//     }
+// }
 
-const map2StateToProps = state => {
-    return {
-        email : state.email
-    }
-}
+// const map2StateToProps = state => {
+//     return {
+//         email : state.email
+//     }
+// }
 
-const map1DispatchToProps = dispatch => {
-    return {
-        typeName: (event) => dispatch(typeName(event.target.value))
-    }
-}
+// const map1DispatchToProps = dispatch => {
+//     return {
+//         typeName: (event) => dispatch(typeName(event.target.value))
+//     }
+// }
 
-const map2DispatchToProps = dispatch => {
-    return {
-        typeEmail: (event) => dispatch(typeEmail(event.target.value))
-    }
-}
+// const map2DispatchToProps = dispatch => {
+//     return {
+//         typeEmail: (event) => dispatch(typeEmail(event.target.value))
+//     }
+// }
 
-connect(map1StateToProps,map1DispatchToProps)(Body)
-connect(map2StateToProps,map2DispatchToProps)(Body)
+// connect(map1StateToProps,map1DispatchToProps)(Body)
+// connect(map2StateToProps,map2DispatchToProps)(Body)
 export default Body
