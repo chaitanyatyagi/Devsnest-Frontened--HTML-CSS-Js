@@ -1,0 +1,298 @@
+.col-5 {
+  width: 34.6666667vw;
+}
+
+.col-6 {
+  width: 50vw;
+}
+
+.product-container {
+  width: 90vw;
+  margin: 120px auto;
+}
+
+.product-container img,
+svg {
+  vertical-align: baseline;
+}
+
+.product-img img {
+  width: 28vw;
+  height: auto;
+  padding: 30px;
+}
+
+.pd-l {
+  padding-left: 35px;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.p-company {
+  color: #878787;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.p-name {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.p-price {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.xyz {
+  color: #22a685;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.star {
+  display: inline-block;
+  background-color: #22a685;
+  color: white;
+  padding: 2px 7px;
+  border-radius: 14px;
+}
+
+.star img {
+  height: 12px;
+  margin: 2px 0 0 2px;
+}
+
+.review-rating {
+  vertical-align: baseline;
+  margin-bottom: 30px;
+}
+
+.review-rating .num {
+  font-weight: 500;
+  color: #878787;
+  margin-left: 0.8rem;
+}
+
+.col-6 {
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.add-btn {
+  height: 50px;
+  width: 300px;
+  background-color: #ff3e6c;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.add-btn button {
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  justify-content: center;
+  width: 300px;
+  height: 50px;
+  background-color: rgb(0, 188, 242);
+  color: white;
+  padding-top: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+  border: 5px;
+  transition: all ease 0.2s;
+}
+
+.add-btn button:hover {
+  background-color: rgb(4, 177, 224);
+}
+
+.add {
+  margin-left: 8px;
+}
+
+.go {
+  margin-right: 8px;
+}
+
+.add-btn img {
+  height: 25px;
+}
+
+.seller {
+  padding: 17px 10px;
+  border-top: 1.5px solid #eaeaec;
+  border-bottom: 1.5px solid #eaeaec;
+}
+
+.seller .name {
+  margin: 0px 10px;
+  color: #ff3e6c;
+  font-weight: 500;
+}
+
+.rating {
+  display: inline-block;
+  background-color: #ff3e6c;
+  color: white;
+  padding: 0px 5px;
+  border-radius: 14px;
+}
+
+.rating img {
+  height: 12px;
+  margin: 2px 0 0 2px;
+}
+
+.return {
+  margin-left: 60px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+}
+
+.cod {
+  margin-left: 60px;
+  margin-top: 5px;
+
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+}
+
+.return img {
+  margin-top: 2px;
+  height: 17px;
+  margin-right: 10px;
+}
+
+.return span {
+  color: grey;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.cod span {
+  color: grey;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.cod img {
+  margin-top: 2px;
+  height: 17px;
+  margin-right: 10px;
+}
+
+.res {
+  margin-left: 5px;
+  border-bottom: 1.5px solid #eaeaec;
+}
+
+.res-title {
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+
+.hdg {
+  font-size: 14px;
+}
+
+.fill {
+  margin-right: 15px;
+  width: 140px;
+  height: 4px;
+  background-color: #eaeaec;
+  position: relative;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ans-fill-1 {
+  width: 77%;
+  background-color: #03a685;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 2px;
+}
+
+.caption {
+  display: inline-block;
+  font-size: 13.5px;
+  font-weight: 500;
+}
+
+.ans-fill-2 {
+  width: 84%;
+  background-color: #03a685;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 2px;
+}
+
+.property {
+  margin: 12px 0px;
+}
+
+.ans {
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 720px) {
+  .product-container {
+    width: 90vw;
+    margin: 40px auto;
+  }
+
+  .row1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-6 {
+    width: 75vw;
+    margin: 5px auto;
+  }
+
+  .pd-l {
+    padding: 0;
+  }
+
+  .col-5 {
+    width: 80vw;
+    margin: 20px auto;
+  }
+
+  .product-img img {
+    width: 80vw;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .col-6 {
+    width: 80vw;
+    margin: 5px auto;
+  }
+}
