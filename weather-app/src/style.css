@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-size: 3vh;
+}
+.Background{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+.Left{
+    width: 35%;
+    background-color: #1E213A;
+    display: grid;
+    grid-template-rows: 1fr 4fr 2fr 1fr 0.5fr 0.5fr ;
+    height: 100%;
+}
+.Right{
+    height: 100%;
+    width:65%;
+    background-color: #100E1D;
+    display: grid;
+    grid-template-rows: 1fr 4fr 0.5fr 4fr 3fr 0.3fr;
+}
+.Search{
+    /* border: 2px solid white; */
+display: flex;
+align-items: center;}
+.Search input{
+    height: 3.5vh;
+    width: 20vw;
+    font-size: 2.5vh;
+    color: black;
+}
+.Search button{
+    background-color:#1E213A;
+    border: 0px solid #1E213A;
+    cursor: pointer;
+}
+.Search img{
+    height: 35px;
+    width: 35px;
+}
+.LocationImage{
+    /* border: 2px solid white; */
+display: flex;
+justify-content: center;
+    align-items: center;}
+.LocationImage img{
+    height: 40%;
+    width: 40%;
+}
+
+.Temperature{
+    display: flex;
+justify-content: center;
+    align-items: center;
+    /* border: 2px solid white; */
+}
+
+.WeatherDetail{
+    display: flex;
+justify-content: center;
+    align-items: flex-end;
+    /* border: 2px solid white; */
+    font-size: 5.5vh;
+}
+
+.Date{
+    display: flex;
+justify-content: center;
+    align-items: flex-start;
+    /* border: 2px solid white; */
+    font-size: 1.5vh;
+}
+
+.Location{
+    display: flex;
+justify-content: center;
+    align-items:flex-start;
+    /* border: 2px solid white; */
+    font-size: 2vh;
+}
+
+.ButtonConvertor{
+    /* border: 2px solid white; */
+}
+
+.DailyReport{
+    /* border: 2px solid white; */
+display: flex;
+align-items:center;
+justify-content: space-around;
+}
+
+.Heading{
+    display: flex;
+    /* border: 2px solid white; */
+    justify-self: center;
+align-items: center;}
+h1{
+    display: flex;
+    text-align: center;
+    font-size: 10vh;
+}
+
+.TodayReportOne{
+    /* border: 2px solid white; */
+    display: flex;
+    align-items:center;
+    justify-content: space-around;}
+
+.TodayReportTwo{
+    /* border: 2px solid white; */
+display: flex;
+    align-items:center;
+    justify-content: space-around;}
+
+.Profile{
+    /* border: 2px solid white; */
+    font-size: 1.5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Profile a{
+    font-size: 1.5vh;
+}
+
+@media (min-width:0px) and (max-width:550px){
+    .Background{
+        flex-direction: column;
+    }
+    .Left{
+        width: 100vw;
+        height: 50vh;
+    }
+    .Right{
+        width: 100vw;
+        height: 50vh;   
+    }
+    .Search input{
+        height: 3vh;
+        width: 40vw;
+        font-size: 2vh;
+    }
+}

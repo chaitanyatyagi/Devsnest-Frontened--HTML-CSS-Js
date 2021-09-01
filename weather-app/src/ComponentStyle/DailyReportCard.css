@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-size: 3vh;
+}
+
+.DailyReportCard{
+    background-color: #1E213A;
+    height: 60%;
+    width: 15%;
+    display: grid;
+grid-template-rows: 1fr 3fr 1fr;
+}
+.DailyReportInside{
+    text-align: center;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .DailyReportInsideImg{
+    text-align: center;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 

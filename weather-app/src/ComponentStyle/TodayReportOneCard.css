@@ -1,0 +1,22 @@
+.TodayReportOneCard{
+    background-color: #1E213A;
+    height: 90%;
+    width: 40%;
+    display: grid;
+grid-template-rows: 1fr 3fr 1fr;
+}
+.TodayReportOneInside{
+    text-align: center;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TodayReportOneInsideData{
+    text-align: center;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7.3vh;
+}
